@@ -1,0 +1,8 @@
+node_modules/
+env/
+
+package-lock.json
+static/js/*
+view/*/
+view/*copy*
+*pycache*

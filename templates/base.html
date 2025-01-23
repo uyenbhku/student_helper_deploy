@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/App.css') }}">
+
+  <title>Flask and React Project</title>
+</head>
+<body>
+  <div id="root"></div>
+
+  <!-- Embed data using Jinja2 -->
+  <script>
+    // data = JSON.parse({{ data | tojson }});
+    // window.__INITIAL_DATA__ = data;
+  </script>
+
+  <!-- React App -->
+  <script src="{{url_for('static', filename='js/bundle.js')}}"></script>
+</body>
+</html>

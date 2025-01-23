@@ -1,0 +1,37 @@
+{
+  "name": "react-flask-app",
+  "version": "1.0.0",
+  "description": "A template to make React - Flask server-side rendering app",
+  "main": "index.js",
+  "scripts": {
+    "build": "SET NODE_ENV=development BABEL_ENV=development && webpack --config webpack.config.js --watch",
+    "serve": "SET NODE_ENV=production BABEL_ENV=production && webpack --config webpack.config.js --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/eslint-parser": "^7.26.5",
+    "antd": "^5.23.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.1.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.26.0",
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-react": "^7.26.3",
+    "babel-loader": "^9.2.1",
+    "babel-preset-react-app": "^10.0.1",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  }
+}
