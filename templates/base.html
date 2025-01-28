@@ -4,17 +4,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/App.css') }}">
-
-  <title>Flask and React Project</title>
+  <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='img/logo.svg') }}">
+  <title>Student Helper</title>
 </head>
 <body>
   <div id="root"></div>
 
   <!-- Embed data using Jinja2 -->
   <script>
-    // data = JSON.parse({{ data | tojson }});
-    // window.__INITIAL_DATA__ = data;
+    data = JSON.parse({{ data | tojson }});
+    window.__APP_DATA__ = data;
   </script>
 
   <!-- React App -->
