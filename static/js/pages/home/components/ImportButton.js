@@ -128,7 +128,7 @@ var ImportButton = exports.ImportButton = function ImportButton(_ref) {
           course_code: fields.course_code,
           course_name_vn: courseData.course_name_vn,
           course_type: (0, _constants.getBaseType)(fields.course_type) || courseData.course_type,
-          total_credits: fields.total_credits || courseData.total_credits,
+          total_credits: parseInt((fields === null || fields === void 0 ? void 0 : fields.total_credits) || (courseData === null || courseData === void 0 ? void 0 : courseData.total_credits) || 0),
           gpa: fields.gpa
         };
       });

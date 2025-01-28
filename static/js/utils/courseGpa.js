@@ -19,8 +19,8 @@ var calculateCumulativeGPA = exports.calculateCumulativeGPA = function calculate
   var weightedGPA = 0.0;
   courses.forEach(function (course) {
     if (dontUse(course) || dontUseForGPA(course)) return;
-    totalGPACredits += course.total_credits;
-    weightedGPA += parseFloat(course.gpa) * course.total_credits;
+    totalGPACredits += parseInt(course.total_credits);
+    weightedGPA += parseFloat(course.gpa) * parseInt(course.total_credits);
   });
   return totalGPACredits > 0 ? (weightedGPA / totalGPACredits).toFixed(2) : 0;
 };
@@ -36,7 +36,7 @@ var countCourses = exports.countCourses = function countCourses(courses) {
       creditPerType.no_name++;
     }
     if (dontUse(course)) return;
-    var courseCredits = course.total_credits;
+    var courseCredits = parseInt(course.total_credits);
     totalCredits += courseCredits; // Always add to total
 
     var courseType = (0, _constants.getBaseType)(course.course_type);
