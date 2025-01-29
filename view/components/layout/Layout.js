@@ -30,6 +30,9 @@ export const LayoutWrapper = () => {
       <Header
         style={{
           display: "flex",
+          position: "sticky",
+          top: 0,
+          zIndex: 2000,
           justifyContent: "space-between",
           alignItems: "center",
         }}
@@ -117,7 +120,7 @@ export const LayoutWrapper = () => {
           ></Menu>
         )}
       </Header>
-      <Content style={{ padding: "20px" }}>
+      <Content style={{ margin: "20px", }}>
         <Outlet />
       </Content>
       <Footer style={{ textAlign: "center" }}>

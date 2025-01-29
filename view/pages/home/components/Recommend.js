@@ -135,6 +135,7 @@ export const Recommend = () => {
             key: index,
           }))}
           columns={columns}
+          tableLayout="auto"
           pagination={{}}
         />
       </Card>

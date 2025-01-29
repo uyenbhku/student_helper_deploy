@@ -598,7 +598,7 @@ export const GpaTable = () => {
 
   const [controlDirection, setControlDirection] = useState("row");
   const checkWindowSize = () => {
-    if (window.innerWidth > 599) {
+    if (window.innerWidth > 850) {
       setControlDirection("row");
     } else {
       setControlDirection("column");
