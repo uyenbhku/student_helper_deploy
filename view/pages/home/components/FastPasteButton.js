@@ -7,7 +7,7 @@ import { useContentParser } from "../../../utils/contentParser";
 const { TextArea } = Input;
 
 const MODAL_TEXTS = {
-  title: "Dán nội dung CSV/TSV",
+  title: "Dán nội dung bảng điểm",
   okText: "Nhập",
   cancelText: "Hủy",
   placeholder: "Dán nội dung vào đây...",
@@ -312,7 +312,7 @@ export const FastPasteButton = ({ onImportSuccess }) => {
         >
           <div className="space-y-4">
             <p>
-              Dán nội dung từ file CSV/TSV của bạn vào đây. Định dạng yêu cầu:
+              Dán nội dung từ file CSV/TSV hoặc bảng điểm trên DAA của bạn vào đây. Định dạng yêu cầu:
             </p>
 
             <div className="bg-gray-50 p-3 rounded">
