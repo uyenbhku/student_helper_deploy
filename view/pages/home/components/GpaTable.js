@@ -411,6 +411,7 @@ export const GpaTable = () => {
               options={coursesData.map((course) => ({
                 value: course.course_name_vn,
                 label: course.course_name_vn,
+                key: course.key,
               }))}
             />
           </Form.Item>
